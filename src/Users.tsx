@@ -6,6 +6,7 @@ import useFilters from "./hooks/useFilters";
 import FilterInputs from "./components/filterInputs/FilterInputs";
 import UserTable from "./components/userTable/UserTable";
 import "./Users.css";
+import Loader from "./components/loader/Loader";
 
 export default function Users() {
   const dispatch = useDispatch<AppDispatch>();
@@ -18,7 +19,7 @@ export default function Users() {
     dispatch(fetchUsersData());
   }, [dispatch]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
   if (error) return <p>Error: {error}</p>;
 
   return (
