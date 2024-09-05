@@ -1,0 +1,20 @@
+@import "../../constants/colors.constants.css";
+
+.filter-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-input {
+  padding: 10px;
+  width: 22%;
+  border: 1px solid var(--grey-color);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 5px;
+}

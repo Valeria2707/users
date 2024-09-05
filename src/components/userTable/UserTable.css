@@ -1,0 +1,37 @@
+@import "../../constants/colors.constants.css";
+
+.user-table-container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  overflow: hidden;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table thead {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-size: 18px;
+  text-align: left;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+}
+
+.user-table tbody tr {
+  background-color: var(--light-grey-color);
+  border-bottom: 1px solid var(--grey-color);
+}
+
+.user-table .no-users-text {
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
